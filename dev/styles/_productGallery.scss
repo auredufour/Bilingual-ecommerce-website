@@ -1,0 +1,72 @@
+aside {
+	@include span-columns(3 of 12);
+
+	p {
+		font-family: "Montserrat";
+	}
+}
+
+.gallery {
+	@include span-columns(9 of 12);
+	margin: 0;
+	text-align: center;
+	
+	.show, .sort {
+		@include span-columns(2 of 9, block-collapse);
+	}
+	.menu, .show, .sort {
+		display: flex;
+		align-items: center;
+	}
+	.item{
+		@include span-columns(2 of 9);
+		@include shift(3);
+		text-align: right;
+	}
+
+	.menu {
+		margin-top: 4rem;
+
+		select{
+	    	appearance: none;
+	    	padding: 0.5rem 3rem 0.5rem 0.5rem;
+	    	border: none;
+	    	background: #fff;
+	    	z-index: 1;
+	    	background-image: url(../assets/arrow.png);
+	    	background-size: 10px;
+    		background-repeat: no-repeat;
+   			background-position: 95% 60%;
+		}
+	}
+	.galleryProduct {
+		display: flex;
+		flex-flow: wrap row;
+		justify-content: space-between;
+	}
+
+	.product {
+		width: calc(50% - 3rem);
+		margin: 3rem 0;
+
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.pages {
+		display: flex;
+		margin-bottom: 4rem;
+
+		.pagesNumber{
+			display: flex;
+			margin: 0 auto;
+			li {
+			text-align: center;
+				border: 2px solid $grey;
+				padding: 1rem 2rem;
+			}
+		}
+	}
+}

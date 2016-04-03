@@ -1,0 +1,69 @@
+.collection {
+
+	.one, .two, .three, .four, .five {
+		margin-top: 2rem;
+		@include span-columns(12 of 12);
+		position: relative;
+		display: flex;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+	.image {
+		@include span-columns(9 of 12);
+		img {
+			width: 100%;
+		}
+	}
+
+	.text {
+		@include span-columns(3 of 12);
+		text-align: center;
+		margin: auto;
+
+		img {
+			margin: 0 auto;
+			padding: 2rem 0;
+		}
+	}
+
+	.background {
+		@include span-columns(3 of 12);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		z-index: -1;
+	}
+
+	.one .text .background {
+		background: $green;
+	}
+
+	.two .text .background{
+		background: $yellow;
+	}
+	.three .text .background{
+		background: $blue;
+	}
+
+	.four .text .background{
+		background: $salmon;
+	}
+
+	.five .text .background{
+		background: $turquoise;
+	}
+
+	.one .text .background, .three .text .background, .five .text .background {
+		right: 0;
+	}
+
+	.two .text, .four .text {
+		@include span-columns(3 of 12);
+		margin-left: 0;
+	} 
+
+	.two .text .background, .four .text .background {
+		left: 0;
+	}
+}

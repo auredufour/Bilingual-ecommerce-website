@@ -1,0 +1,42 @@
+header {
+	background: url(../assets/mainLP-hero.jpg) no-repeat;
+	background-size: cover; 
+	padding: 21rem 0;
+	display: flex;
+
+	.title {
+		margin: auto;
+		text-align: center;
+	}
+
+	p {
+		@include span-columns(8 of 12);
+		@include shift(2);
+		text-align: center;
+		line-height: 3rem;
+	}
+}
+
+header.contact, header.product {
+	background: $grey;
+	padding: 8rem;
+	@include span-columns(12 of 12);
+
+	.left {
+		@include span-columns(6 of 12);
+
+		p {
+			text-align: left;
+			margin: 0;
+			padding: 0.4rem 0;
+		}
+	}
+	.right {
+		text-align: right;
+		@include span-columns(6 of 12);
+		
+		h4 {
+			margin: 0;
+		}
+	}
+}

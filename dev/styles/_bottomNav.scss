@@ -1,0 +1,19 @@
+.bottomNav {
+	padding: 3rem 0;
+}
+
+.bottomNav ul {
+	@include span-columns(7 of 12);
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	font-family: "Montserrat";
+}
+
+.bottomNav li:hover {
+	color: black;
+}
+
+.bottomNav .logo {
+	@include span-columns(5 of 12);
+}

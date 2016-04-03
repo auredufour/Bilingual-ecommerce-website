@@ -1,0 +1,87 @@
+$green: #C7DB9C;
+$yellow: #F4DC86;
+$blue: #A7C8EB;
+$salmon: #ED8B5C;
+$turquoise: #BCE5D3;
+$grey: #F6F6F6;
+$typoGrey: #999999;
+
+@import 'setup';
+@import "typography";
+@import "../libraries/bourbon/bourbon.scss";
+@import "../libraries/neat/neat.scss";
+@import "collection";
+@import "topNav";
+@import "bottomNav";
+@import "header";
+@import "client";
+@import "information";
+@import "service";
+@import "socialMedia";
+@import "contactImage";
+@import "form";
+@import "footer";
+@import "productGallery";
+
+html {
+	font-size: 62.5%;
+}
+
+.wrapper {
+	 @include outer-container(980px);
+	 margin: 0 auto;
+	 font-family: "Roboto Slab";
+	 font-size: 1.4rem;
+}
+
+ul {
+	padding-left: 0;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	display: block;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.copyright{
+	@include span-columns(12 of 12);
+	text-align: center;
+	padding: 3rem 0;
+}
+
+.contact .copyright {
+	background: $grey;
+}
+
+a {
+	text-decoration: none;
+	color: $typoGrey;
+
+	&:hover {
+		color: #000;
+	}
+}
+	input:-webkit-autofill, textarea:-webkit-autofill  {
+	-webkit-box-shadow: 0 0 0px 1000px #fff inset;
+	border: 1px solid #fff;
+	}
+
+	textarea, input, input:focus, input:active, ::-webkit-input-placeholder, select {
+		outline: none;
+	}
+
+	select{
+	    	appearance: none;
+	    	padding: 0.5rem;
+	    	border: none;
+	    	background: #fff;
+	    	z-index: 1;
+		}

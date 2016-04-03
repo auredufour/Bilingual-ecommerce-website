@@ -1,0 +1,59 @@
+.form {
+	@include span-columns(12 of 12);
+	padding: 5rem 0;
+	position: relative;
+
+	.background{
+		width: 18%;
+		background: $grey;
+		position: absolute;
+		top: 5rem;
+		bottom: 15rem;
+		z-index: -1;
+	}
+	
+	.contactInfo {
+		@include span-columns(3 of 12);
+		padding: 3rem 0;
+		color: $typoGrey;
+
+		p{
+			padding-left: 2.5rem;
+		}
+	}
+	.socialMediaLogo {
+		display: flex;
+		justify-content: space-around;
+		padding: 1rem 0;
+	}
+
+	form {
+		@include span-columns(9 of 12);
+		
+		input, textarea {
+			padding: 2rem;
+			border: none;
+			border-bottom: 2px solid $grey;
+			font-family: "Montserrat";
+		}
+
+		input:first-child, input:nth-child(2), input:nth-child(3){
+			@include span-columns(3 of 9);
+		}
+		input:nth-child(3) {
+			margin-right: 0;
+		}
+		input:nth-child(4), textarea {
+			@include span-columns(9 of 9);
+		}
+		input[type=submit]{
+			@include span-columns(3 of 9);
+			border: 2px solid #000;
+			background: #fff;
+			padding: 1.5rem 3rem;
+			margin-top: 5rem;
+			text-transform: uppercase;
+		}
+	}
+
+}

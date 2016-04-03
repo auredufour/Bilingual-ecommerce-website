@@ -1,0 +1,68 @@
+.topNav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid $grey;
+	padding: 0;
+
+	.left ul, .right ul{
+		display: flex;
+		align-item: flex-end;
+		margin: 0;
+		padding: 0;
+		background: #fff;
+
+		li:hover {
+			color: black;
+		}
+	}
+
+	.left li {
+		padding: 1.5rem 3rem;
+		border-right: 1px solid $grey;
+		text-align: center;
+		align-items: center;
+	}
+	.left li:first-child{
+		padding: 1rem 3rem;
+	}
+	.right li {
+		padding: 1.5rem 3rem;
+		border-left: 1px solid $grey;
+	}
+	.right .subMenu li {
+		padding: 0;
+		border: 1px solid transparent;
+	}
+	.subMenu li:nth-child(2){
+		padding: 0 1rem;
+		margin: 0 1rem;
+		background: $grey;
+		color: black;
+		border: 2px solid transparent;
+
+		&:hover {
+			border: 2px solid black;
+		}
+	}
+	.left form {
+		position: relative;
+		display: none;
+	}
+
+	.left .searchField {
+		padding: 0.5rem 1rem;
+		text-transform: uppercase;
+	}
+
+	.left input[type=submit]{
+		display: none;
+	}
+	.left i:nth-child(2) {
+		display: none;
+	}
+	.left li:nth-child(4){
+		padding: 1rem 3rem;
+		border: none;
+	}
+}

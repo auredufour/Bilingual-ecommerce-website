@@ -1,0 +1,36 @@
+.socialMedia {
+	@include span-columns(12 of 12);
+	background: $grey;
+	padding: 3rem 0;
+
+	.socialMediaLogo {
+		@include span-columns(3 of 12);
+		display: flex;
+		color: #999999;
+		align-items: center;
+
+		i {
+			padding: 2rem;
+		}
+	}
+
+		.news {
+			@include span-columns(3 of 12);
+			h4 {
+				margin: 0;
+				padding: 1.6rem 0;
+			}
+		}
+
+		.input {
+			@include span-columns(6 of 12);
+			margin: 0;
+			padding: calc(2.5rem - 2rem) 0;
+		}
+
+		input[type=text]{
+			width: 100%;
+			padding: 1rem;
+		}
+	
+}

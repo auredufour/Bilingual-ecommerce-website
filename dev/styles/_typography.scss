@@ -1,0 +1,42 @@
+h1 {
+	font-size: 3.6rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.8rem;
+}
+
+header p {
+	color: #666666;
+	font-family: "Montserrat";
+	font-weight: 300;
+}
+
+.topNav, .bottomNav {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	font-family: "Montserrat";
+	font-weight: 400;
+	color: $typoGrey;
+}
+
+.information {
+		 	font-size: 2.4rem;
+}
+
+.service {
+	li {
+		font-family: "Montserrat";
+		color: #666666;
+		line-height: 3.6rem;
+	}
+	h4 {
+		font-family: "Roboto Slab";
+	}
+}
+
+	h4 {
+		font-size: 1.8rem;
+		letter-spacing: 0.3rem;
+		color: black;
+		text-transform: uppercase;
+	}
